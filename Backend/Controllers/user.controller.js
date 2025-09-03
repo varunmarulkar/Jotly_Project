@@ -2,7 +2,8 @@ import UserModel from "../Models/User.model.js";
 import crypto from "crypto"
 import { SendVerificationCode, WelcomeEmail } from "../Middleware/Email.js";
 import jwt from "jsonwebtoken"
-import { JWT_SECRET } from "../Config/gmailconfig.js";
+import { JWT_SECRET } from "../config/gmailConfig.js";
+import { EMAIL_PASS,EMAIL_USER } from "../config/gmailConfig.js";
 
 export async function register(req, res) {
 

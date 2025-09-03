@@ -2,7 +2,7 @@
 
 import UserModel from "../Models/User.model.js"
 import jwt from "jsonwebtoken"
-import { JWT_SECRET } from "../Config/gmailconfig.js"
+import { JWT_SECRET } from "../config/gmailConfig.js"
 
 export async function VerifyToken(req,res,next){
     try {
